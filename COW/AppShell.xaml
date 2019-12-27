@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:COW.Views"
+             mc:Ignorable="d"
+             x:Class="COW.AppShell">
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <ContentView BackgroundColor="Beige"></ContentView>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    <FlyoutItem Title="Home">
+        <Tab Title="Meat">
+            <ShellContent Title="Chicken"  ContentTemplate="{DataTemplate views:DashboardPage}"/>
+            <ShellContent Title="Mutton" ContentTemplate="{DataTemplate views:FavoritesPage}"/>
+        </Tab>
+        <Tab Title="Favorite">
+            <ShellContent ContentTemplate="{DataTemplate views:FavoritesPage}"/>
+        </Tab>
+        <!--<Tab Title="Profile">
+            <ShellContent ContentTemplate="{DataTemplate views:ProfilePage}"/>
+        </Tab>
+        <Tab Title="More">
+            <ShellContent ContentTemplate="{DataTemplate views:MorePage}"/>
+        </Tab>-->
+    </FlyoutItem>
+    <MenuItem Text="Orders"/>
+    <MenuItem Text="Favorites"/>
+    <MenuItem Text="Settings"/>
+</Shell>
