@@ -1,4 +1,6 @@
-﻿using System;
+﻿using COW.Shared.Models;
+using COW.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,16 +12,11 @@ using Xamarin.Forms.Xaml;
 namespace COW.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DashboardPage : ContentPage
+    public partial class MeatPage : ContentPage
     {
-        public DashboardPage()
+        public MeatPage()
         {
             InitializeComponent();
-        }
-
-        private void SelectableItemsView_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            Console.WriteLine("Selected");
         }
     }
 }

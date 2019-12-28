@@ -13,7 +13,7 @@
     </Shell.FlyoutHeaderTemplate>
     <FlyoutItem Title="Home">
         <Tab Title="Meat">
-            <ShellContent Title="Chicken"  ContentTemplate="{DataTemplate views:DashboardPage}"/>
+            <ShellContent Title="Chicken"  ContentTemplate="{DataTemplate views:MeatPage}"/>
             <ShellContent Title="Mutton" ContentTemplate="{DataTemplate views:FavoritesPage}"/>
         </Tab>
         <Tab Title="Favorite">
