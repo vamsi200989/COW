@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using COW.API.Repository;
-using Microsoft.AspNetCore.Http;
+﻿using COW.Data.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -22,6 +17,8 @@ namespace COW.API.Controllers
             this.meatRepository = meatRepository;
         }
 
+        [HttpGet]
+        [Route("chickenMenu")]
         public IActionResult GetChickenMenu()
         {
             return Ok(meatRepository.GetChickenItems());
