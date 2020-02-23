@@ -14,13 +14,16 @@ namespace COW.Data.Repository
                 {
                     ProductId = Guid.NewGuid(),
                     Name = "Chicken Wings",
-                    Price = 90
+                    Price = 90,
+                    ImageUrl = "https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg"
+
                 },
                 new Item()
                 {
                     ProductId = Guid.NewGuid(),
                     Name = "Whole Chicken",
-                    Price = 100
+                    Price = 100,
+                    ImageUrl = "https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg"
                 },
             };
         }
